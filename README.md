@@ -47,10 +47,10 @@ vi .jupyter/jupyter_server_config.py
 ~~~
 then inside you can add this
 ~~~python
-c.ServerApp.ip = '*' # bind to any network interface
-c.ServerApp.password = u'sha256:bcd259ccf...<your hashed password here>'
 c.ServerApp.open_browser = False
 c.ServerApp.port = 8888 # or any other ports you'd like
+c.ServerApp.ip = '*' # bind to any network interface
+c.ServerApp.password = 
 ~~~
 then to get the password we 
 

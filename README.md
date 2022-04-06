@@ -7,11 +7,7 @@ ssh -i '.path/to/key' ubuntu@<ip>
 ~~~
 
 ~~~python
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-~~~
-
-~~~python
-chmod u+x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh &&  hmod u+x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_64.sh
 ~~~
 
 ~~~
@@ -19,23 +15,19 @@ source .bashrc
 ~~~
 
 ~~~python
-conda install -y pytorch torchvision torchaudio cudatoolkit -c pytorch
+conda install -y pytorch torchvision torchaudio cudatoolkit -c pytorch pandas scikit-learn matplotlib tqdm seaborn tensorboard
 ~~~
-
-~~~python
-conda install -y pandas scikit-learn matplotlib tqdm seaborn tensorboard
-~~~
-
-~~~python
-conda clean -a
-~~~
-
 ## We then get going with setting up jupyterlab
 installing jupyter lab
 
 ~~~python
 conda install -c conda-forge jupyterlab
 ~~~
+~~~python
+conda clean -a
+~~~
+
+
 server-configurations:
 
 ~~~python

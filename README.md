@@ -2,6 +2,10 @@
 
 ## First of all, getting miniconda installed
 
+~~~shell
+sh -i '.path/to/key' ubuntu@<ip>
+~~~
+
 ~~~python
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ~~~

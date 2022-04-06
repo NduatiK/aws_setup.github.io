@@ -3,7 +3,7 @@
 ## First of all, getting miniconda installed
 
 ~~~shell
-sh -i '.path/to/key' ubuntu@<ip>
+ssh -i '.path/to/key' ubuntu@<ip>
 ~~~
 
 ~~~python

@@ -6,19 +6,13 @@
 ssh -i '.path/to/key' ubuntu@<ip>
 ~~~
 
-~~~python
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && chmod u+x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_64.sh
+~~~shell
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && chmod u+x Miniconda3-latest-Linux-x86_64.sh && ./Miniconda3-latest-Linux-x86_64.sh  && source .bashrc
 ~~~
 
+~~~shell
+conda install -y pytorch torchvision torchaudio cudatoolkit pandas scikit-learn matplotlib tqdm seaborn tensorboard -c pytorch 
 ~~~
-source .bashrc
-~~~
-
-~~~python
-conda install -y pytorch torchvision torchaudio cudatoolkit -c pytorch pandas scikit-learn matplotlib tqdm seaborn tensorboard
-~~~
-## We then get going with setting up jupyterlab
-installing jupyter lab
 
 ~~~python
 conda install -c conda-forge jupyterlab
@@ -35,8 +29,9 @@ touch .jupyter/jupyter_server_config.py
 ~~~
 
 ~~~python
-vi .jupyter/jupyter_server_config.py
+nano .jupyter/jupyter_server_config.py
 ~~~
+
 then inside you can add this
 ~~~python
 c.ServerApp.open_browser = False

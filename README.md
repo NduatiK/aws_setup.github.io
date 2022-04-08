@@ -44,8 +44,7 @@ then to get the password we
 ~~~python
 jupyter server password
 
-jupyter server password --generate-config
-nohup jupyter notebook --no-browser &
+nohup jupyter lab --no-browser &
 ~~~
 
 then 

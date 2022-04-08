@@ -45,7 +45,7 @@ then to get the password we
 jupyter server password
 
 jupyter server password --generate-config
-jupyter lab --port=8880 --no-browser --ip="*"  
+nohup jupyter notebook --no-browser &
 ~~~
 
 then 

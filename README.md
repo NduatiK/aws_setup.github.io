@@ -1,5 +1,23 @@
 # A Notebook on Quickly getting a deep learning base AMI running
 
+# TODO
+- [ ] Look into using a environment file for all of this 
+```yaml
+# ./environment.yml
+# To use:
+#   $ conda env create -f environment.yml
+#   $ conda activate d2l
+name: d2l
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - d2l==0.17.0
+    - torch==1.8.1
+    - torchvision==0.9.1
+
+```
+
 ## First of all, getting miniconda installed
 
 ~~~shell

@@ -75,12 +75,24 @@ copy the hashed password into the .py file you created above
 
 ~~~
 tmux new-session
-jupyter lab
-tmux ls
+tmux new -s mysession
+> jupyter lab
 
 Ctrl + b w
 Session and Window Preview
 
+Ctrl + b d
+Detach from session
+
+tmux ls
+Ctrl + b s
+Show all sessions
+
+tmux a
+Attach to last session
+
+tmux a -t mysession
+Attach to a session with the name mysession
 ~~~
 
 go here 

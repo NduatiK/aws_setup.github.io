@@ -74,7 +74,13 @@ copy the hashed password into the .py file you created above
 ## Getting the lab launched
 
 ~~~
+tmux new-session
 jupyter lab
+tmux ls
+
+Ctrl + b w
+Session and Window Preview
+
 ~~~
 
 go here 
